@@ -8,13 +8,12 @@ const NewTodo = (props) => {
         props.addTodo(inputvalue)
         setInputvalue("")
     }
-    //const clearAll = ()
 
     return (
         <div>
+            <header>My Todos</header>
             <input placeholder="Add Your Todo" onChange={e=>handleChange(e.target.value)} value={inputvalue} />
             <button onClick={handleButton} > Add New Todo </button>
-            <button> Clear All </button>
         </div>
     )
 }

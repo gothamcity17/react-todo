@@ -13,7 +13,7 @@ const App = () => {
   };
 
  
-  //const clearAll = () => {};
+  const clearAll = () => setItems([]);
   
 
   const deleteTodo = (id) => {
@@ -25,6 +25,7 @@ const App = () => {
       <div>
       <NewTodo addTodo={addTodo} />
       <Display items={items} deleteTodo={deleteTodo} />
+      <button onClick={clearAll}>Clear All</button>
       </div>
     )
 }
