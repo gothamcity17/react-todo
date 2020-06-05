@@ -13,11 +13,9 @@ const App = () => {
   };
 
  
-  const clearAll = () => {
-    
-   
-  };
+  //const clearAll = () => {};
   
+
   const deleteTodo = (id) => {
     console.log(id)
     let filtered = items.filter((item,index)=>index!==id)
